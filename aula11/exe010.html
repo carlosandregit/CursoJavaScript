@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais onde mora</title>
+</head>
+<body>
+    <h1>Informe o país onde mora</h1>
+    <input type="text" name="text1" id="text1"> 
+    <input type="button" value="Consultar nacionalidade" onclick="consultar()">
+    <div id="paisReside"> Sua nacionalidade é</div>
+
+    <script>
+        function consultar(){
+            debugger;
+            let pais = window.document.getElementById('text1')
+            let paisReside = window.document.getElementById('paisReside')
+            let result = pais.value
+            
+            if(result != 'brasil' && result != 'Brasil'){
+                paisReside.innerHTML = 'estrangeiro(a)'
+            }
+            else{
+                paisReside.innerHTML = 'brasileiro(a)'
+            }
+            
+
+        }
+    </script>
+    
+</body>
+</html>
