@@ -1,0 +1,34 @@
+body{
+    background-color: #EEE8AA;
+    font: normal 14pt Arial;
+    /* text-align: center; */
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+section{
+    background: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 350px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+input[type="number"]{
+    width: 80px;
+}
+
+select{
+    width: 110px;
+    height: 170px;
+    margin-top: 10px;
+    /* margin-left: 125px; */
+
+}
+footer{
+    text-align: center;
+    padding: 40px;
+}
