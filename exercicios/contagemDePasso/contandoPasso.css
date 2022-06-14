@@ -1,0 +1,57 @@
+body {
+    background-color: #4169E1;
+    font: normal 14pt Arial;
+  
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+}
+
+section {
+    background: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 400px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+#numFim {
+    margin-top: 10px;
+}
+
+#qtPasso {
+    margin-top: 10px;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+#priNum{
+    margin-left: 16px;
+}
+
+#segNum{
+    margin-left: 20px;
+}
+
+input[type='button'] {
+    margin-top: 10px;
+    margin-left: 72px;
+    width: 90px;
+}
+
+#text {
+    margin-top: 20px;
+        
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+}

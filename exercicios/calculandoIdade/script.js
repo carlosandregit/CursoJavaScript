@@ -1,11 +1,13 @@
 function verificar() {
 
+    let img = window.document.querySelector('#respImg')   
+    img.innerHTML = null
+
     let data = new Date()
     let ano = data.getFullYear()
     let AnoDigitado = window.document.getElementById('textAno')
     let resImg = window.document.querySelector('#respImg')
-    let resp = window.document.querySelector('#resp')
-    let resText = window.document.querySelector('#resText')
+    let resText = document.querySelector('#resText')
 
     if (AnoDigitado.value > ano || AnoDigitado.value.length < 4) {
         window.alert('[ERRO] Dados inválidos')
@@ -21,7 +23,7 @@ function verificar() {
         if (sex[0].checked) {
             genero = 'Homem'
 
-            if (idade > 1 && idade <= 10) {
+            if (idade > 0 && idade <= 10) {
                 //criança
                 img.setAttribute('src', 'foto-h-crianca.png')
             } else if (idade <= 20) {
@@ -70,10 +72,8 @@ function limpar() {
 
     let AnoDigi = window.document.getElementById('textAno')
     AnoDigi.value = null
-
     let img = window.document.querySelector('#respImg')   
-    img.innerHTML = null
-
+    img.innerHTML = null    
     resText.innerHTML = null
 
 }
