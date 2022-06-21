@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de números</title>
+    <link rel="stylesheet" href="analisaValores.css">
+</head>
+
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div id="form">
+            <div id="textAnalisador">
+                <label for="textAnalisa">Números entre (1 e 200)</label>
+                <input type="number" name="textAnalisa" id="textAnalisa">
+                <input type="button" value="Adicionar" onclick="Adicionar()">
+            </div>
+            <div id="selec">
+                <select name="contador" id="selectContador" size="10"></select>
+            </div>
+            <div id="btn">
+                <input type="button" value="Finalizar" onclick="Finalizar()">
+                <input type="button" value="Limpar" onclick="Limpar()">
+            </div>
+            <div id="res">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;CursoJavaScript</p>
+    </footer>
+    <script src="analisaValores.js"></script>
+</body>
+
+</html>
